@@ -34,9 +34,12 @@ function draw() {
 
   hero.display();
 
-  
+  keyPressed()
 
-}
+}function keyPressed(){
+  if (keyCode === 32){
+    Matter.body.applyForce(hero,hero.position,{x:85,y:-85})
+  }}
 function mouseDragged(){
   Matter.Body.setPosition(hero.body, {x: mouseX , y: mouseY});
   strokeWeight(3)
