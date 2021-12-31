@@ -13,7 +13,7 @@ class Hero {
 		
 
 		this.scale=0.5
-		this.body=Matter.Bodies.circle(this.x, this.y, (this.r)/2, options,[5]);
+		this.body=Matter.Bodies.circle(this.x, this.y, (this.r)/2, options);
 		
 		World.add(world, this.body);
 
@@ -27,8 +27,9 @@ class Hero {
 			translate(heroPos.x, heroPos.y-100);
 			rectMode(CENTER)
 			fill(255,0,255)
-			imageMode(CENTER);
-			image(this.image, 0,0,this.r+150, this.r)
+			
+			
+			ellipse(0,0,this.r, this.r);
 			pop()
 			
 	}
