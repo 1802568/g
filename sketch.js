@@ -48,6 +48,6 @@ function mouseReleased(){
   hero.velocityX=5
 }
 function keyPressed(){
-  if (keyCode === UP_ARROW){
+  if (keyCode === 32){
     Matter.body.applyForce(hero.body,hero.body.position,{x:85,y:-85})
   }}
