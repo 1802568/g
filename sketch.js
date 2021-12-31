@@ -20,9 +20,6 @@ function setup() {
   ground1 = new Ground(800, 535, 20, 150);
   ground2 = new Ground(1200, 535, 20, 150);
   hero = new Hero(400,800,250);
-  rope = new Rope(hero.body, { x: 500, y: 50 });
-  
-
   
 
 }
@@ -36,7 +33,7 @@ function draw() {
  
 
   hero.display();
-  rope.display();
+
   
 
 }
@@ -47,6 +44,6 @@ function mouseDragged(){
 
 
 function mouseReleased(){
-  rope.fly();
+
   hero.velocityX=5
 }
