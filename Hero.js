@@ -11,7 +11,7 @@ class Hero {
 		
 
 		this.scale=0.5
-		this.body=Matter.Bodies.circle(this.x, this.y, (this.r)/2, options,maxsides);
+		this.body=Matter.Bodies.circle(this.x, this.y, (this.r)/2, options,[5]);
 		
 		World.add(world, this.body);
 
