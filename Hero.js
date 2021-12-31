@@ -8,10 +8,10 @@ class Hero {
 		this.x=x;
 		this.y=y;
 		this.r=r;
-		this.image=loadImage("download (1).png");
+		
 
 		this.scale=0.5
-		this.body=Bodies.circle(this.x, this.y, (this.r)/2, options);
+		this.body=Matter.Bodies.circle(this.x, this.y, (this.r)/2, options,maxsides);
 		
 		World.add(world, this.body);
 
