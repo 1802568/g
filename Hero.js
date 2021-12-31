@@ -17,10 +17,7 @@ class Hero {
 		
 		World.add(world, this.body);
 
-	}function keyPressed(){
-  if (keyCode === 32){
-    Matter.body.applyForce(this.body,this.body.position,{x:85,y:-85})
-  }}
+	}
 	
 	display()
 	{
